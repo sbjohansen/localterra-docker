@@ -25,7 +25,7 @@ services:
       - ./logs:/app/logs
     networks:
       - terra-classic
-    env_file: fcd.env
+    env_file: "fcd.env"
     command: collector
     restart: unless-stopped
   fcd-api:
