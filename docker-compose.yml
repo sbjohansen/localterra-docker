@@ -39,7 +39,8 @@ services:
       - terra-classic
     ports:
       - 3060:3060
-    env_file: fcd.env
+    env_file: 
+      - fcd.env
     command: start
 
 networks:
